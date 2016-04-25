@@ -52,7 +52,7 @@ LOG_TO_SYSLOG=${LOG_TO_SYSLOG:=0}
 SYSLOG_FACILITY=${SYSLOG_FACILITY:=user}
 SYSLOG_LEVEL=${SYSLOG_LEVEL:=info}
 SYSLOG_TAG=${SYSLOG_TAG:=docker-gc}
-DRY_RUN=${DRY_RUN:=1}
+DRY_RUN=${DRY_RUN:=0}
 
 for pid in $(pidof -s docker-gc); do
     if [[ $pid != $$ ]]; then
